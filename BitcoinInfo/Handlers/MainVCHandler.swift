@@ -49,7 +49,7 @@ extension MainVC{
         return date
     }
     
-   public func changeColorForLabel(){
+   @objc public func changeColorForLabel(){
         if infoRateLabel.text!.range(of:"-") != nil {
             infoRateLabel.backgroundColor = UIColor(named: "NewRed")
             infoHintLabel.text = "It looks like your coin going down :("
