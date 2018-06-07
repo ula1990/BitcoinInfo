@@ -109,6 +109,7 @@
 		C0C6949A20C98E3400FED852 /* BitcoinInfo */ = {
 			isa = PBXGroup;
 			children = (
+				C0C6949B20C98E3400FED852 /* AppDelegate.swift */,
 				C0C6949F20C98E3400FED852 /* Main.storyboard */,
 				C0C694D620C993AA00FED852 /* VC */,
 				C0C694DC20C99ACD00FED852 /* Handlers */,
@@ -117,7 +118,6 @@
 				C0C694A520C98E3500FED852 /* Assets.xcassets */,
 				C0C694A720C98E3500FED852 /* LaunchScreen.storyboard */,
 				C0C694AA20C98E3500FED852 /* Info.plist */,
-				C0C6949B20C98E3400FED852 /* AppDelegate.swift */,
 				C0C694A220C98E3400FED852 /* BitcoinInfo.xcdatamodeld */,
 			);
 			path = BitcoinInfo;

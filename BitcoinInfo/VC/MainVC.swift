@@ -144,8 +144,6 @@ class MainVC: UIViewController {
     }()
 
     fileprivate func setupView(){
-        
-
         additionalInfoView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
         additionalInfoView.topAnchor.constraint(equalTo: view.topAnchor, constant: 90).isActive = true
         additionalInfoView.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 20).isActive = true
@@ -162,7 +160,6 @@ class MainVC: UIViewController {
         infoLastUpdateDateLabel.leftAnchor.constraint(equalTo: additionalInfoView.centerXAnchor).isActive = true
         infoLastUpdateDateLabel.heightAnchor.constraint(equalToConstant: 30).isActive = true
         
-
         infoRateLabel.centerYAnchor.constraint(equalTo: additionalInfoView.centerYAnchor).isActive = true
         infoRateLabel.rightAnchor.constraint(equalTo: additionalInfoView.rightAnchor, constant: -20).isActive = true
         infoRateLabel.heightAnchor.constraint(equalToConstant: 110).isActive = true
@@ -239,7 +236,4 @@ class MainVC: UIViewController {
         listOfCoinsTable.dataSource = self
         self.uploadBitcoinInfo()
     }
-
-
-
 }

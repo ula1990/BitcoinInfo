@@ -46,7 +46,6 @@ class CoinCell: UITableViewCell {
         return image
     }()
     
-    
     fileprivate func setupViews(){
         
         coinImage.centerYAnchor.constraint(equalTo: self.centerYAnchor).isActive = true
@@ -63,7 +62,6 @@ class CoinCell: UITableViewCell {
         nameLabel.centerYAnchor.constraint(equalTo: self.centerYAnchor).isActive = true
         nameLabel.heightAnchor.constraint(equalTo: self.heightAnchor).isActive = true
         nameLabel.rightAnchor.constraint(equalTo: self.rightAnchor,constant: -5).isActive = true
-        
     }
 
     override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
@@ -81,7 +79,6 @@ class CoinCell: UITableViewCell {
     func updateDataInCell(coin: Coin){
         symbolLabel.text = coin.symbol
         nameLabel.text = coin.name
-
     }
     
     override func awakeFromNib() {
