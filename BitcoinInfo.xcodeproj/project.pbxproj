@@ -8,13 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		C0C6949C20C98E3400FED852 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C6949B20C98E3400FED852 /* AppDelegate.swift */; };
-		C0C6949E20C98E3400FED852 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C6949D20C98E3400FED852 /* ViewController.swift */; };
 		C0C694A120C98E3400FED852 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0C6949F20C98E3400FED852 /* Main.storyboard */; };
 		C0C694A420C98E3400FED852 /* BitcoinInfo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C0C694A220C98E3400FED852 /* BitcoinInfo.xcdatamodeld */; };
 		C0C694A620C98E3500FED852 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0C694A520C98E3500FED852 /* Assets.xcassets */; };
 		C0C694A920C98E3500FED852 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0C694A720C98E3500FED852 /* LaunchScreen.storyboard */; };
 		C0C694B420C98E3500FED852 /* BitcoinInfoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C694B320C98E3500FED852 /* BitcoinInfoTests.swift */; };
 		C0C694BF20C98E3600FED852 /* BitcoinInfoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C694BE20C98E3600FED852 /* BitcoinInfoUITests.swift */; };
+		C0C694CF20C98E9200FED852 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C694CE20C98E9200FED852 /* MainVC.swift */; };
+		C0C694D120C992FB00FED852 /* CoinsTableExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C694D020C992FB00FED852 /* CoinsTableExtension.swift */; };
+		C0C694D420C9937E00FED852 /* CoinCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C694D320C9937E00FED852 /* CoinCell.swift */; };
+		C0C694D820C9943200FED852 /* CoinModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C694D720C9943200FED852 /* CoinModel.swift */; };
+		C0C694DB20C99AC700FED852 /* MainVCHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C694DA20C99AC700FED852 /* MainVCHandler.swift */; };
+		C0C694DE20C9A42200FED852 /* AlertHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C694DD20C9A42200FED852 /* AlertHandler.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +42,6 @@
 /* Begin PBXFileReference section */
 		C0C6949820C98E3400FED852 /* BitcoinInfo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BitcoinInfo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0C6949B20C98E3400FED852 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C0C6949D20C98E3400FED852 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C0C694A020C98E3400FED852 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C0C694A320C98E3400FED852 /* BitcoinInfo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BitcoinInfo.xcdatamodel; sourceTree = "<group>"; };
 		C0C694A520C98E3500FED852 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +53,12 @@
 		C0C694BA20C98E3500FED852 /* BitcoinInfoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BitcoinInfoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0C694BE20C98E3600FED852 /* BitcoinInfoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitcoinInfoUITests.swift; sourceTree = "<group>"; };
 		C0C694C020C98E3600FED852 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C0C694CE20C98E9200FED852 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
+		C0C694D020C992FB00FED852 /* CoinsTableExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinsTableExtension.swift; sourceTree = "<group>"; };
+		C0C694D320C9937E00FED852 /* CoinCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinCell.swift; sourceTree = "<group>"; };
+		C0C694D720C9943200FED852 /* CoinModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinModel.swift; sourceTree = "<group>"; };
+		C0C694DA20C99AC700FED852 /* MainVCHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVCHandler.swift; sourceTree = "<group>"; };
+		C0C694DD20C9A42200FED852 /* AlertHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertHandler.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,12 +109,15 @@
 		C0C6949A20C98E3400FED852 /* BitcoinInfo */ = {
 			isa = PBXGroup;
 			children = (
-				C0C6949B20C98E3400FED852 /* AppDelegate.swift */,
-				C0C6949D20C98E3400FED852 /* ViewController.swift */,
 				C0C6949F20C98E3400FED852 /* Main.storyboard */,
+				C0C694D620C993AA00FED852 /* VC */,
+				C0C694DC20C99ACD00FED852 /* Handlers */,
+				C0C694D220C992FF00FED852 /* Extensions */,
+				C0C694D920C99A3E00FED852 /* Models */,
 				C0C694A520C98E3500FED852 /* Assets.xcassets */,
 				C0C694A720C98E3500FED852 /* LaunchScreen.storyboard */,
 				C0C694AA20C98E3500FED852 /* Info.plist */,
+				C0C6949B20C98E3400FED852 /* AppDelegate.swift */,
 				C0C694A220C98E3400FED852 /* BitcoinInfo.xcdatamodeld */,
 			);
 			path = BitcoinInfo;
@@ -126,6 +139,48 @@
 				C0C694C020C98E3600FED852 /* Info.plist */,
 			);
 			path = BitcoinInfoUITests;
+			sourceTree = "<group>";
+		};
+		C0C694D220C992FF00FED852 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C0C694D020C992FB00FED852 /* CoinsTableExtension.swift */,
+				C0C694D520C9938600FED852 /* Cells */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		C0C694D520C9938600FED852 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				C0C694D320C9937E00FED852 /* CoinCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		C0C694D620C993AA00FED852 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				C0C694CE20C98E9200FED852 /* MainVC.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		C0C694D920C99A3E00FED852 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C0C694D720C9943200FED852 /* CoinModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C0C694DC20C99ACD00FED852 /* Handlers */ = {
+			isa = PBXGroup;
+			children = (
+				C0C694DA20C99AC700FED852 /* MainVCHandler.swift */,
+				C0C694DD20C9A42200FED852 /* AlertHandler.swift */,
+			);
+			path = Handlers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,8 +314,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C0C6949E20C98E3400FED852 /* ViewController.swift in Sources */,
+				C0C694DB20C99AC700FED852 /* MainVCHandler.swift in Sources */,
 				C0C694A420C98E3400FED852 /* BitcoinInfo.xcdatamodeld in Sources */,
+				C0C694D420C9937E00FED852 /* CoinCell.swift in Sources */,
+				C0C694DE20C9A42200FED852 /* AlertHandler.swift in Sources */,
+				C0C694D120C992FB00FED852 /* CoinsTableExtension.swift in Sources */,
+				C0C694CF20C98E9200FED852 /* MainVC.swift in Sources */,
+				C0C694D820C9943200FED852 /* CoinModel.swift in Sources */,
 				C0C6949C20C98E3400FED852 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
