@@ -14,7 +14,6 @@ class MainVC: UIViewController {
     let coinCellId = "coinCellId"
     var listOfCoins: [Coin] = []
     let urlString = "https://api.coinmarketcap.com/v2/ticker/"
-    var offlineModeActive = false
 
     lazy var additionalInfoView: UIView = {
         let view = UIView()
