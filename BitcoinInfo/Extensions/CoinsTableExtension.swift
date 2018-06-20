@@ -28,6 +28,7 @@ extension MainVC: UITableViewDelegate, UITableViewDataSource{
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let coin = listOfCoins[indexPath.row]
         updateAdditionalInfo(coin: coin)
+        navigationController?.navigationBar.topItem?.title = "Bitcoin Info" + "(\(String(coin.name!)))"
         listOfCoinsTable.deselectRow(at: indexPath, animated: true)
     }
 }

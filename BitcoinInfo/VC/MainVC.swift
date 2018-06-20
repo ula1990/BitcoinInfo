@@ -191,7 +191,7 @@ class MainVC: UIViewController {
         additionalInfoView.topAnchor.constraint(equalTo: view.topAnchor, constant: 90).isActive = true
         additionalInfoView.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 20).isActive = true
         additionalInfoView.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -20).isActive = true
-        additionalInfoView.heightAnchor.constraint(equalToConstant: 250).isActive = true
+        additionalInfoView.heightAnchor.constraint(equalToConstant: 230).isActive = true
         
         infoTitleLabel.topAnchor.constraint(equalTo: additionalInfoView.topAnchor, constant: 10).isActive = true
         infoTitleLabel.leftAnchor.constraint(equalTo: additionalInfoView.leftAnchor, constant: 10).isActive = true
