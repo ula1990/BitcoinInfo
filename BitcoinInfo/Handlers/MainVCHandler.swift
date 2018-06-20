@@ -52,18 +52,20 @@ extension MainVC{
    @objc public func changeColorForLabel(){
         if infoRateLabel.text!.range(of:"-") != nil {
             infoRateLabel.backgroundColor = UIColor(named: "NewRed")
-            infoHintLabel.text = "It looks like your coin going down :("
         }else{
             infoRateLabel.backgroundColor = UIColor(named: "NewGreen")
-            infoHintLabel.text = "Congrats!It looks like your coin going up :)"
         }
     }
     
     public func updateAdditionalInfo(coin: Coin){
-        infoPriceTitleLabel.text = "Price:"
+        infoPriceTitleLabel.text = "Price(USD):"
+        percentDayTitleLabel.text = "24H Changes:"
+        percentWeekTitleLabel.text = "7D Changes:"
         for value in coin.quotes.values {
             infoRateLabel.text = String((value.percent_change_1h)!)
             infoPriceLabel.text = String((value.price)!)
+            percentDayLabel.text = String((value.percent_change_24h)!)
+            percentWeekLabel.text = String((value.percent_change_7d)!)
         }
         changeColorForLabel()
     }

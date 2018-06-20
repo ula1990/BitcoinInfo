@@ -25,4 +25,6 @@ struct Coin: Decodable {
 struct USD: Decodable {
     let price: Double?
     let percent_change_1h: Double?
+    let percent_change_24h: Double?
+    let percent_change_7d: Double?
 }

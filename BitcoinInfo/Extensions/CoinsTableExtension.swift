@@ -29,6 +29,5 @@ extension MainVC: UITableViewDelegate, UITableViewDataSource{
         let coin = listOfCoins[indexPath.row]
         updateAdditionalInfo(coin: coin)
         listOfCoinsTable.deselectRow(at: indexPath, animated: true)
-        Alert.showBasic(title: "Info", msg: "Coin ID: \(String(coin.id!))" + " Coin Page: \(coin.website_slug!)", vc: self)
     }
 }

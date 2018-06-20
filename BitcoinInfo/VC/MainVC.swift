@@ -53,7 +53,7 @@ class MainVC: UIViewController {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.textAlignment = .left
-        label.font = UIFont.systemFont(ofSize: 30)
+        label.font = UIFont.systemFont(ofSize: 20)
         label.textColor = UIColor.black.withAlphaComponent(0.7)
         label.adjustsFontSizeToFitWidth = true
         label.minimumScaleFactor = 0.5
@@ -79,7 +79,51 @@ class MainVC: UIViewController {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.textAlignment = .left
-        label.font = UIFont.systemFont(ofSize: 30)
+        label.font = UIFont.systemFont(ofSize: 15)
+        label.textColor = UIColor.black.withAlphaComponent(0.7)
+        label.adjustsFontSizeToFitWidth = true
+        label.minimumScaleFactor = 0.5
+        return label
+    }()
+    
+    lazy var percentDayTitleLabel: UILabel = {
+        let label = UILabel()
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.textAlignment = .left
+        label.font = UIFont.systemFont(ofSize: 20)
+        label.textColor = UIColor.black.withAlphaComponent(0.7)
+        label.adjustsFontSizeToFitWidth = true
+        label.minimumScaleFactor = 0.5
+        return label
+    }()
+    
+    lazy var percentDayLabel: UILabel = {
+        let label = UILabel()
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.textAlignment = .left
+        label.font = UIFont.systemFont(ofSize: 15)
+        label.textColor = UIColor.black.withAlphaComponent(0.7)
+        label.adjustsFontSizeToFitWidth = true
+        label.minimumScaleFactor = 0.5
+        return label
+    }()
+    
+    lazy var percentWeekTitleLabel: UILabel = {
+        let label = UILabel()
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.textAlignment = .left
+        label.font = UIFont.systemFont(ofSize: 20)
+        label.textColor = UIColor.black.withAlphaComponent(0.7)
+        label.adjustsFontSizeToFitWidth = true
+        label.minimumScaleFactor = 0.5
+        return label
+    }()
+    
+    lazy var percentWeekLabel: UILabel = {
+        let label = UILabel()
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.textAlignment = .left
+        label.font = UIFont.systemFont(ofSize: 15)
         label.textColor = UIColor.black.withAlphaComponent(0.7)
         label.adjustsFontSizeToFitWidth = true
         label.minimumScaleFactor = 0.5
@@ -147,7 +191,7 @@ class MainVC: UIViewController {
         additionalInfoView.topAnchor.constraint(equalTo: view.topAnchor, constant: 90).isActive = true
         additionalInfoView.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 20).isActive = true
         additionalInfoView.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -20).isActive = true
-        additionalInfoView.heightAnchor.constraint(equalToConstant: 220).isActive = true
+        additionalInfoView.heightAnchor.constraint(equalToConstant: 250).isActive = true
         
         infoTitleLabel.topAnchor.constraint(equalTo: additionalInfoView.topAnchor, constant: 10).isActive = true
         infoTitleLabel.leftAnchor.constraint(equalTo: additionalInfoView.leftAnchor, constant: 10).isActive = true
@@ -164,15 +208,35 @@ class MainVC: UIViewController {
         infoRateLabel.heightAnchor.constraint(equalToConstant: 110).isActive = true
         infoRateLabel.widthAnchor.constraint(equalToConstant: 110).isActive = true
         
-        infoPriceLabel.centerYAnchor.constraint(equalTo: additionalInfoView.centerYAnchor).isActive = true
-        infoPriceLabel.leftAnchor.constraint(equalTo: additionalInfoView.leftAnchor, constant: 20).isActive = true
-        infoPriceLabel.heightAnchor.constraint(equalToConstant: 40).isActive = true
-        infoPriceLabel.widthAnchor.constraint(equalToConstant: 125).isActive = true
-
-        infoPriceTitleLabel.bottomAnchor.constraint(equalTo: infoPriceLabel.topAnchor,constant: -10).isActive = true
+        infoPriceTitleLabel.topAnchor.constraint(equalTo: infoTitleLabel.bottomAnchor,constant: 10).isActive = true
         infoPriceTitleLabel.leftAnchor.constraint(equalTo: additionalInfoView.leftAnchor, constant: 20).isActive = true
-        infoPriceTitleLabel.heightAnchor.constraint(equalToConstant: 40).isActive = true
-        infoPriceTitleLabel.widthAnchor.constraint(equalToConstant: 70).isActive = true
+        infoPriceTitleLabel.heightAnchor.constraint(equalToConstant: 30).isActive = true
+        infoPriceTitleLabel.rightAnchor.constraint(equalTo: infoRateLabel.leftAnchor, constant: -10).isActive = true
+        
+        infoPriceLabel.topAnchor.constraint(equalTo: infoPriceTitleLabel.bottomAnchor).isActive = true
+        infoPriceLabel.leftAnchor.constraint(equalTo: additionalInfoView.leftAnchor, constant: 20).isActive = true
+        infoPriceLabel.heightAnchor.constraint(equalToConstant: 30).isActive = true
+        infoPriceLabel.rightAnchor.constraint(equalTo: infoRateLabel.leftAnchor, constant: -10).isActive = true
+        
+        percentDayTitleLabel.topAnchor.constraint(equalTo: infoPriceLabel.bottomAnchor).isActive = true
+        percentDayTitleLabel.leftAnchor.constraint(equalTo: additionalInfoView.leftAnchor, constant: 20).isActive = true
+        percentDayTitleLabel.heightAnchor.constraint(equalToConstant: 30).isActive = true
+        percentDayTitleLabel.rightAnchor.constraint(equalTo: infoRateLabel.leftAnchor, constant: -10).isActive = true
+        
+        percentDayLabel.topAnchor.constraint(equalTo: percentDayTitleLabel.bottomAnchor).isActive = true
+        percentDayLabel.leftAnchor.constraint(equalTo: additionalInfoView.leftAnchor, constant: 20).isActive = true
+        percentDayLabel.heightAnchor.constraint(equalToConstant: 30).isActive = true
+        percentDayLabel.rightAnchor.constraint(equalTo: infoRateLabel.leftAnchor, constant: -10).isActive = true
+        
+        percentWeekTitleLabel.topAnchor.constraint(equalTo: percentDayLabel.bottomAnchor).isActive = true
+        percentWeekTitleLabel.leftAnchor.constraint(equalTo: additionalInfoView.leftAnchor, constant: 20).isActive = true
+        percentWeekTitleLabel.heightAnchor.constraint(equalToConstant: 30).isActive = true
+        percentWeekTitleLabel.rightAnchor.constraint(equalTo: infoRateLabel.leftAnchor, constant: -10).isActive = true
+        
+        percentWeekLabel.topAnchor.constraint(equalTo: percentWeekTitleLabel.bottomAnchor).isActive = true
+        percentWeekLabel.leftAnchor.constraint(equalTo: additionalInfoView.leftAnchor, constant: 20).isActive = true
+        percentWeekLabel.heightAnchor.constraint(equalToConstant: 30).isActive = true
+        percentWeekLabel.rightAnchor.constraint(equalTo: infoRateLabel.leftAnchor, constant: -10).isActive = true
 
         infoHintLabel.bottomAnchor.constraint(equalTo: additionalInfoView.bottomAnchor, constant: -10).isActive = true
         infoHintLabel.leftAnchor.constraint(equalTo: additionalInfoView.leftAnchor, constant: 10).isActive = true
@@ -220,6 +284,10 @@ class MainVC: UIViewController {
         additionalInfoView.addSubview(infoPriceLabel)
         additionalInfoView.addSubview(infoPriceTitleLabel)
         additionalInfoView.addSubview(infoHintLabel)
+        additionalInfoView.addSubview(percentDayTitleLabel)
+        additionalInfoView.addSubview(percentDayLabel)
+        additionalInfoView.addSubview(percentWeekTitleLabel)
+        additionalInfoView.addSubview(percentWeekLabel)
         mainView.addSubview(titleLabel)
         mainView.addSubview(listOfCoinsTable)
         mainView.addSubview(offlineLabel)
