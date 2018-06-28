@@ -21,7 +21,6 @@ class MenuCell: UICollectionViewCell {
         image.contentMode = .scaleAspectFit
         image.clipsToBounds = true
         image.layer.cornerRadius = 5
-        image.image = UIImage(named: "train")
         return image
     }()
     
@@ -30,8 +29,8 @@ class MenuCell: UICollectionViewCell {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.textAlignment = .center
-        label.textColor = UIColor.white.withAlphaComponent(1)
-        label.font = UIFont(name: "SavoyeLetPlain", size: 20)
+        label.textColor = UIColor.black.withAlphaComponent(0.7)
+        label.font = UIFont.systemFont(ofSize: 15)
         label.adjustsFontSizeToFitWidth = true
         label.minimumScaleFactor = 0.5
         label.layer.cornerRadius = 2

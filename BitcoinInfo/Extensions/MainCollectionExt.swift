@@ -19,7 +19,7 @@ extension MainVC: UICollectionViewDelegate, UICollectionViewDataSource, UICollec
             let menu = menuList[indexPath.row]
             let cell = menuCollectionView.dequeueReusableCell(withReuseIdentifier: menuCellId, for: indexPath) as! MenuCell
             cell.updateCellData(menu: menu)
-            cell.backgroundColor = UIColor.gray.withAlphaComponent(0.1)
+            cell.backgroundColor = UIColor.white.withAlphaComponent(0.8)
             cell.layer.cornerRadius = 5
             return cell
     }

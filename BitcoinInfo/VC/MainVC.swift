@@ -85,7 +85,7 @@ class MainVC: UIViewController {
         label.translatesAutoresizingMaskIntoConstraints = false
         label.textAlignment = .center
         label.font = UIFont.systemFont(ofSize: 35)
-        label.textColor = UIColor.white.withAlphaComponent(0.9)
+        label.textColor = UIColor.white.withAlphaComponent(1)
         label.adjustsFontSizeToFitWidth = true
         label.minimumScaleFactor = 0.5
         label.layer.cornerRadius = 20
@@ -221,8 +221,8 @@ class MainVC: UIViewController {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.textAlignment = .center
-        label.textColor = UIColor.white.withAlphaComponent(1)
-        label.font = UIFont.systemFont(ofSize: 30)
+        label.textColor = UIColor.black.withAlphaComponent(0.7)
+        label.font = UIFont.boldSystemFont(ofSize: 30)
         label.adjustsFontSizeToFitWidth = true
         label.minimumScaleFactor = 0.5
         label.layer.cornerRadius = 2
@@ -249,7 +249,7 @@ class MainVC: UIViewController {
     fileprivate func setupView(){
         
         additionalInfoView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
-        additionalInfoView.topAnchor.constraint(equalTo: view.topAnchor, constant: 85).isActive = true
+        additionalInfoView.topAnchor.constraint(equalTo: view.topAnchor, constant: 90).isActive = true
         additionalInfoView.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 20).isActive = true
         additionalInfoView.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -20).isActive = true
         additionalInfoView.heightAnchor.constraint(equalToConstant: 230).isActive = true

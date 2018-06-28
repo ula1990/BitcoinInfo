@@ -16,6 +16,7 @@
 		C04E195220E50703004F88FC /* MainCollectionExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = C04E195120E50703004F88FC /* MainCollectionExt.swift */; };
 		C04E195420E50752004F88FC /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C04E195320E50752004F88FC /* MenuCell.swift */; };
 		C04E195620E508A4004F88FC /* AboutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C04E195520E508A4004F88FC /* AboutVC.swift */; };
+		C04E195820E50987004F88FC /* AboutHandlers.swift in Sources */ = {isa = PBXBuildFile; fileRef = C04E195720E50987004F88FC /* AboutHandlers.swift */; };
 		C0C6949C20C98E3400FED852 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C6949B20C98E3400FED852 /* AppDelegate.swift */; };
 		C0C694A120C98E3400FED852 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0C6949F20C98E3400FED852 /* Main.storyboard */; };
 		C0C694A420C98E3400FED852 /* BitcoinInfo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C0C694A220C98E3400FED852 /* BitcoinInfo.xcdatamodeld */; };
@@ -58,6 +59,7 @@
 		C04E195120E50703004F88FC /* MainCollectionExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainCollectionExt.swift; sourceTree = "<group>"; };
 		C04E195320E50752004F88FC /* MenuCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
 		C04E195520E508A4004F88FC /* AboutVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutVC.swift; sourceTree = "<group>"; };
+		C04E195720E50987004F88FC /* AboutHandlers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutHandlers.swift; sourceTree = "<group>"; };
 		C0C6949820C98E3400FED852 /* BitcoinInfo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BitcoinInfo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0C6949B20C98E3400FED852 /* AppDelegate.swift */ = {isa = PBXFileReference; indentWidth = 5; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C0C694A020C98E3400FED852 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -205,6 +207,7 @@
 			children = (
 				C0C694DA20C99AC700FED852 /* MainVCHandler.swift */,
 				C04E194720E4E582004F88FC /* NewsVCHandler.swift */,
+				C04E195720E50987004F88FC /* AboutHandlers.swift */,
 				C0C694DD20C9A42200FED852 /* AlertHandler.swift */,
 			);
 			path = Handlers;
@@ -343,6 +346,7 @@
 			files = (
 				C04E194E20E4E5EB004F88FC /* Article.swift in Sources */,
 				C0C694DB20C99AC700FED852 /* MainVCHandler.swift in Sources */,
+				C04E195820E50987004F88FC /* AboutHandlers.swift in Sources */,
 				C0C694A420C98E3400FED852 /* BitcoinInfo.xcdatamodeld in Sources */,
 				C04E194A20E4E59E004F88FC /* NewsTableExtension.swift in Sources */,
 				C0C694D420C9937E00FED852 /* CoinCell.swift in Sources */,

@@ -47,7 +47,7 @@ class NewsVC: UIViewController {
     
     @objc fileprivate func setupView(){
         mainView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
-        mainView.topAnchor.constraint(equalTo: view.topAnchor,constant: 85).isActive = true
+        mainView.topAnchor.constraint(equalTo: view.topAnchor,constant: 90).isActive = true
         mainView.bottomAnchor.constraint(equalTo: view.bottomAnchor,constant: -10).isActive = true
         mainView.leftAnchor.constraint(equalTo: view.leftAnchor,constant: 10).isActive = true
         mainView.rightAnchor.constraint(equalTo: view.rightAnchor,constant: -10).isActive = true
