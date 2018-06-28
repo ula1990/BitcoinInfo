@@ -17,7 +17,7 @@ class CoinCell: UITableViewCell {
         label.numberOfLines = 1
         label.textAlignment = .left
         label.font = UIFont.systemFont(ofSize: 15)
-        label.textColor = UIColor.black.withAlphaComponent(0.5)
+        label.textColor = UIColor.black.withAlphaComponent(0.8)
         label.adjustsFontSizeToFitWidth = true
         label.minimumScaleFactor = 0.5
         return label
@@ -30,7 +30,7 @@ class CoinCell: UITableViewCell {
         label.numberOfLines = 1
         label.textAlignment = .center
         label.font = UIFont.boldSystemFont(ofSize: 13)
-        label.textColor = UIColor.black.withAlphaComponent(0.5)
+        label.textColor = UIColor.black.withAlphaComponent(0.7)
         label.adjustsFontSizeToFitWidth = true
         label.minimumScaleFactor = 0.5
         return label
@@ -53,13 +53,14 @@ class CoinCell: UITableViewCell {
         label.numberOfLines = 1
         label.textAlignment = .center
         label.font = UIFont.systemFont(ofSize: 15)
-        label.textColor = UIColor.white.withAlphaComponent(1)
+        label.textColor = UIColor.white.withAlphaComponent(0.9)
         label.adjustsFontSizeToFitWidth = true
         label.minimumScaleFactor = 0.5
         label.layer.cornerRadius = 5
         label.clipsToBounds = true
         return label
     }()
+    
     
     fileprivate func setupViews(){
         
@@ -80,7 +81,7 @@ class CoinCell: UITableViewCell {
         
         coinRateLabel.centerYAnchor.constraint(equalTo: self.centerYAnchor).isActive = true
         coinRateLabel.rightAnchor.constraint(equalTo: self.rightAnchor, constant:-10).isActive = true
-        coinRateLabel.heightAnchor.constraint(equalToConstant: 35).isActive = true
+        coinRateLabel.heightAnchor.constraint(equalToConstant: 30).isActive = true
         coinRateLabel.widthAnchor.constraint(equalToConstant: 50).isActive = true
     }
 

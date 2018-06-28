@@ -18,11 +18,12 @@ extension MainVC: UITableViewDelegate, UITableViewDataSource{
         let coin = listOfCoins[indexPath.row]
         let cell = listOfCoinsTable.dequeueReusableCell(withIdentifier: coinCellId, for: indexPath ) as! CoinCell
         cell.updateDataInCell(coin: coin )
+        cell.backgroundColor = UIColor.black.withAlphaComponent(0)
         return cell
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 60
+        return 50
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {

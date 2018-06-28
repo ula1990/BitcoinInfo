@@ -25,7 +25,6 @@ extension MainVC{
                         self.infoLastUpdateDateLabel.text = self.todayDate()
                         do{
                             let json = try JSONDecoder().decode(BitCoinData.self, from: data!)
-                            print(json.data)
                             for value in json.data{
                                 self.listOfCoins.append(value.value)
                             }
@@ -58,6 +57,7 @@ extension MainVC{
     }
     
     public func updateAdditionalInfo(coin: Coin){
+        selectCoinLabel.isHidden = true
         infoPriceTitleLabel.text = "Price(USD):"
         percentDayTitleLabel.text = "24H Changes:"
         percentWeekTitleLabel.text = "7D Changes:"
@@ -83,5 +83,46 @@ extension MainVC{
     public func onlineMode(){
         self.listOfCoinsTable.isHidden = false
         self.offlineLabel.isHidden = true
+    }
+    
+    @objc public func handleMenu(){
+        if (menuShowing){
+            UIView.animate(withDuration: 0.3) {
+                self.menuHeightAnchor?.isActive = false
+                self.menuHeightAnchor = self.menuView.heightAnchor.constraint(equalToConstant: 0)
+                self.menuHeightAnchor?.isActive = true
+                self.view.layoutIfNeeded()
+            }
+        }else{
+            UIView.animate(withDuration: 0.3, animations: {
+                self.menuHeightAnchor?.isActive = false
+                self.menuHeightAnchor = self.menuView.heightAnchor.constraint(equalToConstant: 150)
+                self.menuHeightAnchor?.isActive = true
+                self.view.layoutIfNeeded()
+            }) { (true) in
+            }
+        }
+        menuShowing = !menuShowing
+    }
+    
+    @objc public func handleNewsButton(){
+        presentViewController(vc: NewsVC())
+    }
+    
+    @objc public func presentViewController(vc: UIViewController){
+        let newVC = UINavigationController(rootViewController: vc)
+        present(newVC, animated: true, completion: nil)
+    }
+    
+    
+    @objc public func creatMenuArray() -> [Menu] {
+        var array: [Menu] = []
+        
+        let item1 = Menu(name: "News", icon: "news", vc: NewsVC())
+        let item2 = Menu(name: "About", icon: "about", vc: AboutVC())
+        
+        array.append(item1)
+        array.append(item2)
+        return array
     }
 }
